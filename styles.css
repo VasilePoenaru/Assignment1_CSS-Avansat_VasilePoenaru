@@ -1,0 +1,31 @@
+/* 1. Color all Google links in green */
+a[href^="https://www.google.com"] {
+    color: green;
+}
+
+/* 2. Color the LINK group link in red */
+a[href="https://www.link-group.eu/"] {
+    color: red;
+}
+
+/* 3. Alternate paragraph colors in second-div */
+#second-div p:nth-child(odd) {
+    color: red;
+}
+
+#second-div p:nth-child(even) {
+    color: blue;
+}
+
+/* 4. Add "– NEW" after Paragraph 2 and Paragraph 3 */
+#first-div > p:nth-of-type(1)::after, 
+#first-div > p:nth-of-type(2)::after {
+    content: " – NEW";
+    color: yellow;
+}
+
+/* 5. Make Paragraph 10 italic on hover */
+p:nth-of-type(10):hover {
+    font-style: italic;
+    color: blue;
+}
