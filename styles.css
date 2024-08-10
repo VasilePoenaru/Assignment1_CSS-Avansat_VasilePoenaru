@@ -1,14 +1,14 @@
-/* 1. Color all Google links in green */
+/* 1. Colorează linkurile Google în verde */
 a[href^="https://www.google.com"] {
     color: green;
 }
 
-/* 2. Color the LINK group link in red */
+/* 2. Colorează linkurile LINK în roșu */
 a[href="https://www.link-group.eu/"] {
     color: red;
 }
 
-/* 3. Alternate paragraph colors in second-div */
+/* 3. Alternează culorile în second-div */
 #second-div p:nth-child(odd) {
     color: red;
 }
@@ -17,14 +17,14 @@ a[href="https://www.link-group.eu/"] {
     color: blue;
 }
 
-/* 4. Add "– NEW" after Paragraph 2 and Paragraph 3 */
+/* 4. Adaugă "– NEW" după paragrafele 2 și 3 */
 #first-div > p:nth-of-type(1)::after, 
 #first-div > p:nth-of-type(2)::after {
     content: " – NEW";
     color: yellow;
 }
 
-/* 5. Make Paragraph 10 italic on hover */
+/* 5. Paragraful 10 de italicizat când cursorul mouse-ului este deasupra lui */
 p:nth-of-type(10):hover {
     font-style: italic;
     color: blue;
