@@ -25,7 +25,7 @@ a[href="https://www.link-group.eu/"] {
 }
 
 /* 5. Paragraful 10 de italicizat când cursorul mouse-ului este deasupra lui */
-p:nth-of-type(10):hover {
-    font-style: italic;
-    color: blue;
+p:nth-child(8):hover {
+  font-style: italic;
+  cursor:none;
 }
